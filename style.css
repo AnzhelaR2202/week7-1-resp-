@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Позиционирование */
+.grid-container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 15vh 1fr 20vh;
+    height: 100vh;
+}
+
+.header {
+    grid-column: 1 / 4;
+}
+
+.main {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: 60vw 1fr;
+}
+
+
+
+.footer {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main-part {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40vh 30vh 30vh;
+}
+
+#block1 {
+    grid-column: 1 / 4;
+}
+
+#block4 {
+    grid-column: 1 / 4;
+}
+
+/* 1 - Позиционирование элементов в блоках */
+.mainblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.footerbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+} 
+
+/* Топография */
+.grid-container {
+    text-align: center;
+}
+
+.h3 {
+    font-size: 2em;
+}
+
+.header {
+    text-align: center;
+}
+
+.text-header {
+    margin-top: 2%;
+}
+
+.text-aside {
+    margin-top: 25%;
+}
+
+/* Стилизация */
+.header {
+    background-color: gainsboro;
+}
+
+.main-part {
+    background-color: antiquewhite;
+}
+
+#block1 {
+    background-color: antiquewhite;
+}
+
+.mainblock {
+    background-color: rgb(241, 212, 165);
+}
+
+.aside {
+    background-color: rgb(216, 237, 216);
+}
+
+.footer {
+    background-color: gainsboro;
+}
+
+.footerbox {
+    background-color: white;
+}
+
+
